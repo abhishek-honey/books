@@ -1,157 +1,159 @@
 package modernjavainaction.chap02;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class FilteringApples {
 
-  public static void main(String... args) {
-    List<Apple> inventory = Arrays.asList(
-        new Apple(80, Color.GREEN),
-        new Apple(155, Color.GREEN),
-        new Apple(120, Color.RED));
+	public static void main(String... args) {
+		var inventory = getInventory();
 
-    // [Apple{color=GREEN, weight=80}, Apple{color=GREEN, weight=155}]
-    List<Apple> greenApples = filterApplesByColor(inventory, Color.GREEN);
-    System.out.println(greenApples);
+		// [Apple{color=GREEN, weight=80}, Apple{color=GREEN, weight=155}]
+		var greenApples = filterApplesByColor(inventory, Color.GREEN);
+		System.out.println(greenApples);
 
-    // [Apple{color=RED, weight=120}]
-    List<Apple> redApples = filterApplesByColor(inventory, Color.RED);
-    System.out.println(redApples);
+		// [Apple{color=RED, weight=120}]
+		var redApples = filterApplesByColor(inventory, Color.RED);
+		System.out.println(redApples);
 
-    // [Apple{color=GREEN, weight=80}, Apple{color=GREEN, weight=155}]
-    List<Apple> greenApples2 = filter(inventory, new AppleColorPredicate());
-    System.out.println(greenApples2);
+		// [Apple{color=GREEN, weight=80}, Apple{color=GREEN, weight=155}]
+		var greenApples2 = filter(inventory, new AppleColorPredicate());
+		System.out.println(greenApples2);
 
-    // [Apple{color=GREEN, weight=155}]
-    List<Apple> heavyApples = filter(inventory, new AppleWeightPredicate());
-    System.out.println(heavyApples);
+		// [Apple{color=GREEN, weight=155}]
+		var heavyApples = filter(inventory, new AppleWeightPredicate());
+		System.out.println(heavyApples);
 
-    // []
-    List<Apple> redAndHeavyApples = filter(inventory, new AppleRedAndHeavyPredicate());
-    System.out.println(redAndHeavyApples);
+		// []
+		var redAndHeavyApples = filter(inventory, new AppleRedAndHeavyPredicate());
+		System.out.println(redAndHeavyApples);
 
-    // [Apple{color=RED, weight=120}]
-    List<Apple> redApples2 = filter(inventory, new ApplePredicate() {
-      @Override
-      public boolean test(Apple a) {
-        return a.getColor() == Color.RED;
-      }
-    });
-    System.out.println(redApples2);
-  }
+		// [Apple{color=RED, weight=120}]
+		var redApples2 = filter(inventory, new ApplePredicate() {
+			@Override
+			public boolean test(Apple a) {
+				return a.getColor() == Color.RED;
+			}
+		});
+		System.out.println(redApples2);
+	}
 
-  public static List<Apple> filterGreenApples(List<Apple> inventory) {
-    List<Apple> result = new ArrayList<>();
-    for (Apple apple : inventory) {
-      if (apple.getColor() == Color.GREEN) {
-        result.add(apple);
-      }
-    }
-    return result;
-  }
+	private static List<Apple> getInventory() {
+		var inventory = List.of(new Apple(80, Color.GREEN), 
+								new Apple(155, Color.GREEN), 
+								new Apple(120, Color.RED));
+		return inventory;
+	}
 
-  public static List<Apple> filterApplesByColor(List<Apple> inventory, Color color) {
-    List<Apple> result = new ArrayList<>();
-    for (Apple apple : inventory) {
-      if (apple.getColor() == color) {
-        result.add(apple);
-      }
-    }
-    return result;
-  }
+	public static List<Apple> filterGreenApples(List<Apple> inventory) {
+		var result = new ArrayList<Apple>();
+		for (Apple apple : inventory) {
+			if (apple.getColor() == Color.GREEN) {
+				result.add(apple);
+			}
+		}
+		return result;
+	}
 
-  public static List<Apple> filterApplesByWeight(List<Apple> inventory, int weight) {
-    List<Apple> result = new ArrayList<>();
-    for (Apple apple : inventory) {
-      if (apple.getWeight() > weight) {
-        result.add(apple);
-      }
-    }
-    return result;
-  }
+	public static List<Apple> filterApplesByColor(List<Apple> inventory, Color color) {
+		var result = new ArrayList<Apple>();
+		for (Apple apple : inventory) {
+			if (apple.getColor() == color) {
+				result.add(apple);
+			}
+		}
+		return result;
+	}
 
-  public static List<Apple> filter(List<Apple> inventory, ApplePredicate p) {
-    List<Apple> result = new ArrayList<>();
-    for (Apple apple : inventory) {
-      if (p.test(apple)) {
-        result.add(apple);
-      }
-    }
-    return result;
-  }
+	public static List<Apple> filterApplesByWeight(List<Apple> inventory, int weight) {
+		var result = new ArrayList<Apple>();
+		for (Apple apple : inventory) {
+			if (apple.getWeight() > weight) {
+				result.add(apple);
+			}
+		}
+		return result;
+	}
 
-  enum Color {
-    RED,
-    GREEN
-  }
+	public static List<Apple> filter(List<Apple> inventory, ApplePredicate p) {
+		var result = new ArrayList<Apple>();
+		for (Apple apple : inventory) {
+			if (p.test(apple)) {
+				result.add(apple);
+			}
+		}
+		return result;
+	}
 
-  public static class Apple {
+	enum Color {
+		RED, GREEN
+	}
 
-    private int weight = 0;
-    private Color color;
+	public static class Apple {
 
-    public Apple(int weight, Color color) {
-      this.weight = weight;
-      this.color = color;
-    }
+		private int weight = 0;
+		private Color color;
 
-    public int getWeight() {
-      return weight;
-    }
+		public Apple(int weight, Color color) {
+			this.weight = weight;
+			this.color = color;
+		}
 
-    public void setWeight(int weight) {
-      this.weight = weight;
-    }
+		public int getWeight() {
+			return weight;
+		}
 
-    public Color getColor() {
-      return color;
-    }
+		public void setWeight(int weight) {
+			this.weight = weight;
+		}
 
-    public void setColor(Color color) {
-      this.color = color;
-    }
+		public Color getColor() {
+			return color;
+		}
 
-    @SuppressWarnings("boxing")
-    @Override
-    public String toString() {
-      return String.format("Apple{color=%s, weight=%d}", color, weight);
-    }
+		public void setColor(Color color) {
+			this.color = color;
+		}
 
-  }
+		@SuppressWarnings("boxing")
+		@Override
+		public String toString() {
+			return String.format("Apple{color=%s, weight=%d}", color, weight);
+		}
 
-  interface ApplePredicate {
+	}
 
-    boolean test(Apple a);
+	interface ApplePredicate {
 
-  }
+		boolean test(Apple a);
 
-  static class AppleWeightPredicate implements ApplePredicate {
+	}
 
-    @Override
-    public boolean test(Apple apple) {
-      return apple.getWeight() > 150;
-    }
+	static class AppleWeightPredicate implements ApplePredicate {
 
-  }
+		@Override
+		public boolean test(Apple apple) {
+			return apple.getWeight() > 150;
+		}
 
-  static class AppleColorPredicate implements ApplePredicate {
+	}
 
-    @Override
-    public boolean test(Apple apple) {
-      return apple.getColor() == Color.GREEN;
-    }
+	static class AppleColorPredicate implements ApplePredicate {
 
-  }
+		@Override
+		public boolean test(Apple apple) {
+			return apple.getColor() == Color.GREEN;
+		}
 
-  static class AppleRedAndHeavyPredicate implements ApplePredicate {
+	}
 
-    @Override
-    public boolean test(Apple apple) {
-      return apple.getColor() == Color.RED && apple.getWeight() > 150;
-    }
+	static class AppleRedAndHeavyPredicate implements ApplePredicate {
 
-  }
+		@Override
+		public boolean test(Apple apple) {
+			return apple.getColor() == Color.RED && apple.getWeight() > 150;
+		}
+
+	}
 
 }

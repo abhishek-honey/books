@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class Sorting {
 
@@ -18,6 +20,12 @@ public class Sorting {
         new Apple(120, Color.RED)
     ));
 
+//    Supplier<Apple> c1 = Apple::new;
+//    Apple a1 = c1.get();
+//    
+//    Function<Integer, Apple> c2 = Apple::new;
+//    Apple a2 = c2.apply(110);
+    
     // [Apple{color=GREEN, weight=80}, Apple{color=RED, weight=120}, Apple{color=GREEN, weight=155}]
     inventory.sort(new AppleComparator());
     System.out.println(inventory);
