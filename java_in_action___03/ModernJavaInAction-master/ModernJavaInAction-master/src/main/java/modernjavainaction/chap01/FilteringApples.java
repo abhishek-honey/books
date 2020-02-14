@@ -8,8 +8,8 @@ import java.util.function.Predicate;
 public class FilteringApples {
 
 	public static void main(String... args) {
-		List<Apple> inventory = Arrays.asList(new Apple(80, "green"), 
-											  new Apple(155, "green"), 
+		List<Apple> inventory = Arrays.asList(new Apple(80, "green"),
+											  new Apple(155, "green"),
 											  new Apple(120, "red"));
 
 		// [Apple{color='green', weight=80}, Apple{color='green', weight=155}]
@@ -27,6 +27,7 @@ public class FilteringApples {
 		// [Apple{color='green', weight=155}]
 		List<Apple> heavyApples2 = filterApples(inventory, (Apple a) -> a.getWeight() > 150);
 		System.out.println(heavyApples2);
+		System.out.prinln("Hi testing from cs50.")
 
 		// []
 		List<Apple> weirdApples = filterApples(inventory,
