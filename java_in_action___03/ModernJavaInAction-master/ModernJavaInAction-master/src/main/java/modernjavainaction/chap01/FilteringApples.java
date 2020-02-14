@@ -27,7 +27,6 @@ public class FilteringApples {
 		// [Apple{color='green', weight=155}]
 		List<Apple> heavyApples2 = filterApples(inventory, (Apple a) -> a.getWeight() > 150);
 		System.out.println(heavyApples2);
-		System.out.prinln("Hi testing from cs50.")
 
 		// []
 		List<Apple> weirdApples = filterApples(inventory,
