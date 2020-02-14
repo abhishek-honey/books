@@ -22,6 +22,7 @@ import java.time.temporal.TemporalAdjuster;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class DateTimeExamples {
 
@@ -43,9 +44,10 @@ public class DateTimeExamples {
   private static void useOldDate() {
     Date date = new Date(114, 2, 18);
     System.out.println(date);
+    System.out.println(date);
 
     System.out.println(formatters.get().format(date));
-
+    
     Calendar calendar = Calendar.getInstance();
     calendar.set(2014, Calendar.FEBRUARY, 18);
     System.out.println(calendar);
