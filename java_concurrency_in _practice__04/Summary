@@ -1,0 +1,222 @@
+1 Introduction
+
+1.1 A(very)briefhistoryofconcurrency
+1.2 Benefitsofthreads
+1.3 Risksofthreads
+1.4 Threadsareeverywhere
+
+_______________________________________________________________
+_______________________________________________________________
+
+I Fundamentals 13
+
+2 Thread Safety 15 
+2.1 What is thread safety?
+2.2 Atomicity
+2.3 Locking
+2.4 Guarding state with locks
+2.5 Liveness and performance
+
+_______________________________________________________________
+
+3 Sharing Objects 33 
+
+3.1 Visibility
+3.2 Publication and escape
+3.3 Thread confinement
+3.4 Immutability
+3.5 Safe publication
+
+_______________________________________________________________
+
+4 Composing Objects 55 
+4.1 Designing a thread-safeclass
+4.2 Instance confinement
+4.3 Delegating thread safety
+4.4 Adding functionality to existing thread-safe classes 
+4.5 Documenting synchronization policies
+
+_______________________________________________________________
+
+Building Blocks 79 
+5.1 Synchronizedcollections
+5.2 Concurrentcollections
+5.3 Blocking queues and the producer-consumer pattern
+5.4 Blockingandinterruptiblemethods
+5.5 Synchronizers
+5.6 Buildinganefficient,scalableresultcache
+
+_______________________________________________________________
+_______________________________________________________________
+
+Structuring Concurrent Applications 111
+
+Task Execution 113 
+6.1 Executingtasksinthreads
+6.2 TheExecutorframework
+6.3 Findingexploitableparallelism
+
+_______________________________________________________________
+
+Cancellation and Shutdown 135 
+7.1 Taskcancellation
+7.2 Stoppingathread-basedservice
+7.3 Handlingabnormalthreadtermination
+7.4 JVMshutdown
+_______________________________________________________________
+
+Applying Thread Pools 167
+8.1 Implicit couplings between tasks and execution policies
+8.2 Sizingthreadpools
+8.3 ConfiguringThreadPoolExecutor
+8.4 ExtendingThreadPoolExecutor
+8.5 Parallelizingrecursivealgorithms
+
+_______________________________________________________________
+
+GUI Applications 189 
+9.1 WhyareGUIssingle-threaded?
+9.2 Short-runningGUItasks
+9.3 Long-runningGUItasks
+9.4 Shareddatamodels
+9.5 Otherformsofsingle-threadedsubsystems
+
+_______________________________________________________________
+
+III Liveness, Performance, and Testing 203
+10 Avoiding Liveness Hazards 205 
+10.1 Deadlock
+10.2 Avoidinganddiagnosingdeadlocks
+10.3 Other liveness hazards
+
+_______________________________________________________________
+
+11 Performance and Scalability 221 
+11.1 Thinkingaboutperformance 
+11.2 Amdahl’slaw
+11.3 Costs introduced by threads
+11.4 Reducinglockcontention
+11.5 Example:ComparingMapperformance
+11.6 Reducingcontextswitchoverhead
+
+_______________________________________________________________
+
+12 Testing Concurrent Programs 247 
+12.1Testingforcorrectness12.2Testingforperformance
+12.3 Avoidingperformancetestingpitfalls
+12.4Complementarytestingapproaches
+
+
+_______________________________________________________________
+_______________________________________________________________
+
+IV Advanced Topics 275
+
+13 Explicit Locks 277 
+13.1 Lock and ReentrantLock
+13.2 Performance considerations
+13.3 Fairness 
+13.4 Choosing between synchronized and ReentrantLock
+13.5Read-writelocks
+
+_______________________________________________________________
+
+14 Building Custom Synchronizers 291 
+14.1 Managing state dependence
+14.2Usingconditionqueues
+14.3 Explicit condition objects
+14.4Anatomyofasynchronizer
+14.5AbstractQueuedSynchronizer
+14.6 AQS in java.util.concurrent synchronizer classes
+
+_______________________________________________________________
+
+15 Atomic Variables and Nonblocking Synchronization 319 15.1Disadvantagesoflocking 
+15.2 Hardware support for concurrency
+15.3 Atomic variable classes
+15.4 Nonblocking algorithms
+
+_______________________________________________________________
+
+16 The Java Memory Model 337 
+16.1 Whatisamemorymodel,andwhywouldIwantone?
+16.2 Publication
+16.3 Initializationsafety
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

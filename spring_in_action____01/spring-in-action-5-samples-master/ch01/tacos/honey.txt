@@ -1,2 +1,0 @@
-- Successfully imported and deployed the application.
-- Is running on java 12
