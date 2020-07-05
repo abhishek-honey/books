@@ -1,3 +1,6 @@
+java_threads_and_the_concurrency_utilities___05/eclipse/bin/ch02/DeadlockDemo/DeadlockDemo$1.class
+java_threads_and_the_concurrency_utilities___05/eclipse/bin
+*.class
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
