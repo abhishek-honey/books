@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package net.jcip.examples.ch1;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
