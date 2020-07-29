@@ -1,9 +1,9 @@
 1 Introduction
 
-1.1 A(very)briefhistoryofconcurrency
-1.2 Benefitsofthreads
-1.3 Risksofthreads
-1.4 Threadsareeverywhere
+1.1 A(very) brief history of concurrency
+1.2 Benefits of threads
+1.3 Risks of threads
+1.4 Threads are everywhere
 
 _______________________________________________________________
 _______________________________________________________________
@@ -39,12 +39,12 @@ _______________________________________________________________
 _______________________________________________________________
 
 5 Building Blocks 79 
-5.1 Synchronizedcollections
-5.2 Concurrentcollections
+5.1 Synchronized collections
+5.2 Concurrent collections
 5.3 Blocking queues and the producer-consumer pattern
-5.4 Blockingandinterruptiblemethods
+5.4 Blocking and interruptible methods
 5.5 Synchronizers
-5.6 Buildinganefficient,scalableresultcache
+5.6 Building an efficient,scalable result cache
 
 _______________________________________________________________
 _______________________________________________________________
@@ -52,59 +52,60 @@ _______________________________________________________________
 Structuring Concurrent Applications 111
 
 Task Execution 113 
-6.1 Executingtasksinthreads
-6.2 TheExecutorframework
-6.3 Findingexploitableparallelism
+6.1 Executing tasks in threads
+6.2 The Executor framework
+6.3 Finding exploitable parallelism
 
 _______________________________________________________________
 
 Cancellation and Shutdown 135 
-7.1 Taskcancellation
-7.2 Stoppingathread-basedservice
-7.3 Handlingabnormalthreadtermination
-7.4 JVMshutdown
+7.1 Task cancellation
+7.2 Stopping a thread-based service
+7.3 Handling abnormal thread termination
+7.4 JVM shutdown
 _______________________________________________________________
 
 Applying Thread Pools 167
 8.1 Implicit couplings between tasks and execution policies
-8.2 Sizingthreadpools
-8.3 ConfiguringThreadPoolExecutor
-8.4 ExtendingThreadPoolExecutor
-8.5 Parallelizingrecursivealgorithms
+8.2 Sizing thread pools
+8.3 Configuring Thread Pool Executor
+8.4 Extending Thread Pool Executor
+8.5 Parallelizing recursive algorithms
 
 _______________________________________________________________
 
 GUI Applications 189 
-9.1 WhyareGUIssingle-threaded?
-9.2 Short-runningGUItasks
-9.3 Long-runningGUItasks
-9.4 Shareddatamodels
-9.5 Otherformsofsingle-threadedsubsystems
+9.1 Why are GUIs single-threaded?
+9.2 Short-running GUI tasks
+9.3 Long-running GUI tasks
+9.4 Shared data models
+9.5 Other forms of single-threaded sub systems
 
 _______________________________________________________________
 
 III Liveness, Performance, and Testing 203
 10 Avoiding Liveness Hazards 205 
 10.1 Deadlock
-10.2 Avoidinganddiagnosingdeadlocks
+10.2 Avoiding and diagnosing dead locks
 10.3 Other liveness hazards
 
 _______________________________________________________________
 
 11 Performance and Scalability 221 
-11.1 Thinkingaboutperformance 
+11.1 Thinking about performance 
 11.2 Amdahl’slaw
 11.3 Costs introduced by threads
-11.4 Reducinglockcontention
-11.5 Example:ComparingMapperformance
-11.6 Reducingcontextswitchoverhead
+11.4 Reducing lock contention
+11.5 Example:Comparing Mapper performance
+11.6 Reducing context switch overhead
 
 _______________________________________________________________
 
 12 Testing Concurrent Programs 247 
-12.1Testingforcorrectness12.2Testingforperformance
-12.3 Avoidingperformancetestingpitfalls
-12.4Complementarytestingapproaches
+12.1 Testing for correctness
+12.2 Testing for performance
+12.3 Avoiding performance testing pitfalls
+12.4 Complementary testing approaches
 
 
 _______________________________________________________________
@@ -123,15 +124,15 @@ _______________________________________________________________
 
 14 Building Custom Synchronizers 291 
 14.1 Managing state dependence
-14.2Usingconditionqueues
+14.2 Usingconditionqueues
 14.3 Explicit condition objects
-14.4Anatomyofasynchronizer
-14.5AbstractQueuedSynchronizer
+14.4 Anatomy of asynchronizer
+14.5 Abstract Queued Synchronizer
 14.6 AQS in java.util.concurrent synchronizer classes
 
 _______________________________________________________________
 
-15 Atomic Variables and Nonblocking Synchronization 319 15.1Disadvantagesoflocking 
+15 Atomic Variables and Nonblocking Synchronization 15.1 Disadvantages of locking 
 15.2 Hardware support for concurrency
 15.3 Atomic variable classes
 15.4 Nonblocking algorithms
@@ -139,9 +140,9 @@ _______________________________________________________________
 _______________________________________________________________
 
 16 The Java Memory Model 337 
-16.1 Whatisamemorymodel,andwhywouldIwantone?
+16.1 What is a memory model,and why would I want one?
 16.2 Publication
-16.3 Initializationsafety
+16.3 Initialization safety
 
 
 
