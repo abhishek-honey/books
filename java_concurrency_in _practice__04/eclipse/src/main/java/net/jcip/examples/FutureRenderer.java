@@ -1,8 +1,14 @@
 package net.jcip.examples;
 
-import java.util.*;
-import java.util.concurrent.*;
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+import net.jcip.examples.ch5.LaunderThrowable;
 
 /**
  * FutureRenderer
@@ -39,7 +45,7 @@ public abstract class FutureRenderer {
             // We don't need the result, so cancel the task too
             future.cancel(true);
         } catch (ExecutionException e) {
-            throw launderThrowable(e.getCause());
+            throw LaunderThrowable.launderThrowable(e.getCause());
         }
     }
 

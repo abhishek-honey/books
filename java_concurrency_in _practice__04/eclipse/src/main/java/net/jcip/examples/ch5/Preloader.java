@@ -1,7 +1,7 @@
-package net.jcip.examples;
+package net.jcip.examples.ch5;
 
 import java.util.concurrent.*;
-
+import net.jcip.examples.ch5.LaunderThrowable;
 /**
  * Preloader
  *
@@ -12,7 +12,9 @@ import java.util.concurrent.*;
 
 public class Preloader {
     ProductInfo loadProductInfo() throws DataLoadException {
-        return null;
+    	ProductInfo productInfo = new SilverProductInfo();
+    	productInfo.getProductStock();
+        return productInfo;
     }
 
     private final FutureTask<ProductInfo> future =
@@ -39,7 +41,35 @@ public class Preloader {
     }
 
     interface ProductInfo {
+    	public String getProductStock();
     }
+    
+    class SilverProductInfo implements ProductInfo{
+    	String name = "Silver";
+    	String stockPrice = null;
+		@Override
+		public String getProductStock() {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			stockPrice = "Stock Price: 10";
+			return "Stock Price: 10";
+		}
+		@Override
+		public String toString() {
+			return "SilverProductInfo [name=" + name + ", stockPrice=" + stockPrice + "]";
+		}
+    }
+    
+    public static void main(String[] args) throws DataLoadException, InterruptedException {
+		Preloader preloader = new Preloader();
+		preloader.start();
+		ProductInfo productInfo = preloader.get();
+		System.out.println(productInfo);
+	}
 }
+
 
 class DataLoadException extends Exception { }

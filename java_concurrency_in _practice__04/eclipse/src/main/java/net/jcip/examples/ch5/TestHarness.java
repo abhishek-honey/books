@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package net.jcip.examples.ch5;
 
 import java.util.concurrent.*;
 
@@ -38,4 +38,14 @@ public class TestHarness {
         long end = System.nanoTime();
         return end - start;
     }
+    
+    public static void main(String[] args) throws InterruptedException {
+		Runnable runnable  = () -> {
+			System.out.println("Inside runnable");
+		};
+		
+		TestHarness harness = new TestHarness();
+		long timeTasks = harness.timeTasks(5, runnable);
+		System.out.println(timeTasks);
+	}
 }

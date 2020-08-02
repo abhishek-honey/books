@@ -1,8 +1,11 @@
 package net.jcip.examples;
 
-import java.util.concurrent.*;
 import static java.util.concurrent.Executors.newScheduledThreadPool;
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+import net.jcip.examples.ch5.LaunderThrowable;
 
 /**
  * TimedRun2
@@ -30,7 +33,7 @@ public class TimedRun2 {
 
             void rethrow() {
                 if (t != null)
-                    throw launderThrowable(t);
+                    throw LaunderThrowable.launderThrowable(t);
             }
         }
 

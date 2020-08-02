@@ -1,5 +1,7 @@
 package net.jcip.examples;
 
+import net.jcip.examples.ch3.Holder;
+
 /**
  * StuffIntoPublic
  * <p/>

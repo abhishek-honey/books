@@ -1,7 +1,13 @@
 package net.jcip.examples;
 
-import java.util.concurrent.*;
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+
+import net.jcip.examples.ch5.LaunderThrowable;
 
 /**
  * TimedRun
@@ -23,7 +29,7 @@ public class TimedRun {
             // task will be cancelled below
         } catch (ExecutionException e) {
             // exception thrown in task; rethrow
-            throw launderThrowable(e.getCause());
+            throw LaunderThrowable.launderThrowable(e.getCause());
         } finally {
             // Harmless if task already completed
             task.cancel(true); // interrupt if running

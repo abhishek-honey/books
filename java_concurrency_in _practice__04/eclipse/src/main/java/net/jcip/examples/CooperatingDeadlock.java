@@ -1,8 +1,10 @@
 package net.jcip.examples;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
-import net.jcip.annotations.*;
+import net.jcip.annotations.GuardedBy;
+import net.jcip.examples.ch4.Point;
 
 /**
  * CooperatingDeadlock

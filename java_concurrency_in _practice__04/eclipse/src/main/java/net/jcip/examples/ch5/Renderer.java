@@ -1,8 +1,13 @@
-package net.jcip.examples;
+package net.jcip.examples.ch5;
 
-import java.util.*;
-import java.util.concurrent.*;
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.CompletionService;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorCompletionService;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
 
 /**
  * Renderer
@@ -40,7 +45,7 @@ public abstract class Renderer {
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         } catch (ExecutionException e) {
-            throw launderThrowable(e.getCause());
+            throw LaunderThrowable.launderThrowable(e.getCause());
         }
     }
 
