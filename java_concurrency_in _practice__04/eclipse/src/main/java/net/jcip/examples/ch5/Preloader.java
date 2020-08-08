@@ -1,7 +1,6 @@
 package net.jcip.examples.ch5;
 
 import java.util.concurrent.*;
-import net.jcip.examples.ch5.LaunderThrowable;
 /**
  * Preloader
  *
