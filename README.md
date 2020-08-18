@@ -1,8 +1,5 @@
-# Books
-
-List of books:
-
 Java
+
 	Concurrent programming in java design principles and pattern Addison
 	Effective Java 2017 Addison Wesley
 	Getting Started Spring Framework
@@ -11,7 +8,7 @@ Java
 	Java 8 in Action Lambdas Streams Raoul Gabriel
 	Java 8 Lambdas Oreilly 
 	Java Coding Guidelines  75 Recommendations for Reliable and Secure 
-	Java concurrency in practice
+	Java concurrency in Practice
 	Java Performance  The Definitive Guide
 	Java Programming Interview
 	Java Puzzlers  Traps Pitfalls and Corner Cases Bloch Gafter
@@ -26,13 +23,13 @@ Java
 	Scjp sun certified programmer for java platform
 	Spring 5 design patterns master efficient application
 	Spring Boot in Action
-	Thinking in Java
 	Thinking In Java Bruce Eckel
 	Top 1000 Java
 	Venkat Subramaniam Functional Programming in Java
 
 
 Python
+
 	Black Hat Python
 	Data Science from Scratch
 	Django for Beginners Build websites with
@@ -44,11 +41,11 @@ Python
 
 
 Programming
+
 	21st Century C C Tips from the New School by Ben Klemens 
 	Algorithms in C by Robert Sedgewick 
 	ampl-book
 	Apache Kafka Cookbook
-	Apache Spark in 24 Hours Sams Teach Your
 	Apache Spark in 24 hrs 
 	C - n1570
 	CiscoEPNManager 2 2 UserAndAdministratorGuide
@@ -59,7 +56,7 @@ Programming
 	Concurrency in Go Tools and Techniques for Developers
 	Confluent kafka definitive guide
 	Cracking the Coding Interview
-	Donald EKnuth The Art of Computer Programming Volume
+	Donald EKnuth The Art of Computer Programming All Volume
 	Dynamic Programming for Interviews
 	Elastic Serch User Guide
 	Elasticsearch in Action
@@ -107,7 +104,7 @@ Programming
 
 
 Philosophy and others
-	21 Lessons for the 21st Century
+
 	21 lessons for the 21st century Yuval Noah Harari
 	A brief history of time
 	AI Superpowers
@@ -116,7 +113,6 @@ Philosophy and others
 	Carl Sagan - Pale Blue Dot
 	Causality Models Reasoning and Inference by Judea Pearl 
 	Chaos james gleick
-	chaos making a new science
 	Creative Confidence  Unleashing the Creative Potential Within Us All 
 	Deep Work
 	Forbidden Knowledge
@@ -131,11 +127,9 @@ Philosophy and others
 	How we think
 	Iasimov A Memoir
 	Im Fine And Other Lies
-	Influence
 	Influence Science and Practice
 	Kurzweil Ray - Singularity Is Near
 	Memoirs and Misinformation By Jim Carrey
-	Moonwalking with Einstein
 	Moonwalking with Einstein - Foer Joshua
 	Nobody Wants to Read Your Shit Steven Pressfield 
 	Norman Lewis Word Power Made
@@ -148,7 +142,6 @@ Philosophy and others
 	Stephen Hawking -A Brief History Of Time
 	Superintelligence NickBostrom
 	The Book of Why
-	The Book of Why
 	The Character of Physical Law
 	The Elegant Universe - Brian Green
 	The free energy principle a unified brain theory
@@ -156,7 +149,6 @@ Philosophy and others
 	The Paradox of Choice
 	The rise and fall of the third chimpanzee
 	The Second Machine Age Erik
-	The selfish gene
 	The selfish gene
 	The Singularity Is Near Kurzweil Ray
 	The War of Art
@@ -168,6 +160,7 @@ Philosophy and others
 
 
 Maths
+
 	Eli Maor e The Story of a Number Book
 	Introduction to Mathematical Statistics by Robert V Hogg Joseph W McKean Allen T Craig 
 	Measurement By Paul Lockhart
@@ -181,12 +174,14 @@ Maths
 
 
 Pyhsics
+
 	The Feynman Lectures on Physics - VOL1
 	The Feynman Lectures on Physics - VOL2
 	The Feynman Lectures on Physics - VOL3
 
 
 Designing
+
 	Clean Code 2
 	Code CompleteDesign Patterns Elements of Reusable Object-Oriented Software Addison Wesley Professional 1994
 	Design Pattern dzone
@@ -204,6 +199,5 @@ Designing
 	Pro Git
 	Test Driven
 	The Design of Everyday Things - Don Norman
-
 
 
