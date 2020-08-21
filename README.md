@@ -158,6 +158,21 @@ Philosophy and others
 	What It Takes
 	What Makes Your Brain Happy and Why You Should Do the Opposite
 	Why Is Sex Fun The Evolution Of Human Sexuality 
+	
+	The Denial of Death - Ernest_Becker
+	The Birth and Death of Meaning
+	Escape from Evil
+	The Plague
+	Clock Without Hands
+	The Dead - James Joyce’s
+	Collapse How Societies Choose to Fail or Succeed
+	The Rise And Fall Of The Third Reich
+	Being and Time - Martin Heidegger
+	A History of God By Karen Armstrong
+	In the Name of Identity Violence and the need to belong
+	Consciousness Regained
+	The escape from Freedom
+	Decline of the west
 
 
 Maths
