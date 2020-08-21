@@ -143,6 +143,7 @@ Philosophy and others
 	Superintelligence NickBostrom
 	The Book of Why
 	The Character of Physical Law
+	The Denial of Death
 	The Elegant Universe - Brian Green
 	The free energy principle a unified brain theory
 	The God Delusion
