@@ -43,11 +43,15 @@ Python
 Programming
 
 	21st Century C C Tips from the New School by Ben Klemens 
+	Algorithms Illuminated (Part 2) Graph Algorithms and Data Structures by Tim Roughgarden
+	Algorithms Illuminated (Part 3) Greedy Algorithms and Dynamic Programming by Tim Roughgarden
 	Algorithms in C by Robert Sedgewick 
+	Algorithms in Java, Part 5 Graph Algorithms (3rd Edition) by Robert Sedgewick
 	ampl-book
 	Apache Kafka Cookbook
 	Apache Spark in 24 hrs 
 	C - n1570
+	Charts and graphs for Microsoft Office Excel 2007 by Bill Jelen
 	CiscoEPNManager 2 2 UserAndAdministratorGuide
 	Code Charles petzold NickBostrom
 	Coders at work
@@ -57,11 +61,15 @@ Programming
 	Confluent kafka definitive guide
 	Cracking the Coding Interview
 	Donald EKnuth The Art of Computer Programming All Volume
+	Dynamic Programming for Coding Interviews A Bottom-Up Approach to Problem Solving by Meenakshi , Kamal Rawat
 	Dynamic Programming for Interviews
 	Elastic Serch User Guide
 	Elasticsearch in Action
 	Go in Action
 	Google Hacking - For Penetration Tester
+	Graph Algorithms by Amy E. Hodler, Mark Needham
+	Graph Algorithms Practical Examples in Apache Spark and Neo4j by Mark Needham, Amy E. Hodler
+	Graph Databases New Opportunities for Connected Data by Ian Robinson, Jim Webber, Emil Eifrem
 	Hackers Delight
 	Hacking- The Art of Exploitation Erickson
 	Head First Android Development Griffiths
@@ -69,6 +77,7 @@ Programming
 	Head First javascript
 	Head First Networking
 	Herlihy Shavit - The art of multiprocessor programming
+	Introduction to Graph Theory (2nd Edition)(With Solution Manual) by Douglas B. West
 	Just Enough Linux - Learning about Linux one command at a time
 	Just for fun
 	Kali Linux Revealed
@@ -83,6 +92,7 @@ Programming
 	Linux Filesystem Hierarchy
 	Linux the complete reference
 	Making Sense Of NoSQL
+	Netty in Action by Norman Maurer, Marvin Allen Wolfthal
 	Programming Interviews Exposed
 	Programming Pearls
 	RabbitMQ Cookbook
@@ -100,21 +110,31 @@ Programming
 	The C++ Programming Language 4th Edition by Stroustrup B 
 	The Go Programming Language - Donovan Alan A A Kernigha
 	The Mythical Man-Month
-	The Standard C Library by P J Plauger 
+	The Standard C Library by P J Plauger
+	Twenty Lectures on Algorithmic Game Theory by Tim Roughgarden
+	Unsupervised Learning in Space and Time A Modern Approach for Computer Vision using Graph-based Techniques and Deep Neural Networks by Marius Leordeanu
+	
 
 
 Philosophy and others
 
 	21 lessons for the 21st century Yuval Noah Harari
 	A brief history of time
+	A History of God By Karen Armstrong
 	AI Superpowers
+	Being and Time - Martin Heidegger
 	Blasphemy
 	Building a StoryBrand
 	Carl Sagan - Pale Blue Dot
 	Causality Models Reasoning and Inference by Judea Pearl 
 	Chaos james gleick
+	Clock Without Hands
+	Collapse How Societies Choose to Fail or Succeed
+	Consciousness Regained
 	Creative Confidence  Unleashing the Creative Potential Within Us All 
+	Decline of the west
 	Deep Work
+	Escape from Evil - Ernest Becker
 	Forbidden Knowledge
 	Hacking The Next Generation
 	Homo Deus A Brief History of Tomorrow
@@ -127,6 +147,7 @@ Philosophy and others
 	How we think
 	Iasimov A Memoir
 	Im Fine And Other Lies
+	In the Name of Identity Violence and the need to belong
 	Influence Science and Practice
 	Kurzweil Ray - Singularity Is Near
 	Memoirs and Misinformation By Jim Carrey
@@ -134,6 +155,7 @@ Philosophy and others
 	Nobody Wants to Read Your Shit Steven Pressfield 
 	Norman Lewis Word Power Made
 	Power of Subconscious Mind
+	Proving Einstein Right The Daring Expeditions that Changed How We Look at the Universe by S. James Gates Jr. Cathie Pelletier
 	Rich Dad Poor Dad
 	Sapiens A Brief History of Humankind
 	Shadows of Forgotten Ancestors
@@ -141,38 +163,29 @@ Philosophy and others
 	Sleights of Mind What the Neuroscience of Magic Reveals About Our Everyday Deceptions 
 	Stephen Hawking -A Brief History Of Time
 	Superintelligence NickBostrom
+	The Birth and Death of Meaning - Ernest Becker
 	The Book of Why
 	The Character of Physical Law
-	The Denial of Death
+	The Dead - James Joyce’s
+	The Denial of Death - Ernest Becker
 	The Elegant Universe - Brian Green
+	The escape from Freedom
 	The free energy principle a unified brain theory
 	The God Delusion
 	The Paradox of Choice
+	The Plague
 	The rise and fall of the third chimpanzee
+	The Rise And Fall Of The Third Reich
 	The Second Machine Age Erik
 	The selfish gene
 	The Singularity Is Near Kurzweil Ray
 	The War of Art
+	The Worm at the Core On the Role of Death in Life by Sheldon Solomon, Jeff Greenberg, Tom Pyszczynski
 	Thinking Fast Slow Kahneman 
 	Understanding the Digital World by Brian W Kernighan 
 	What It Takes
 	What Makes Your Brain Happy and Why You Should Do the Opposite
 	Why Is Sex Fun The Evolution Of Human Sexuality 
-	
-	The Denial of Death - Ernest_Becker
-	The Birth and Death of Meaning
-	Escape from Evil
-	The Plague
-	Clock Without Hands
-	The Dead - James Joyce’s
-	Collapse How Societies Choose to Fail or Succeed
-	The Rise And Fall Of The Third Reich
-	Being and Time - Martin Heidegger
-	A History of God By Karen Armstrong
-	In the Name of Identity Violence and the need to belong
-	Consciousness Regained
-	The escape from Freedom
-	Decline of the west
 
 
 Maths
@@ -215,5 +228,3 @@ Designing
 	Pro Git
 	Test Driven
 	The Design of Everyday Things - Don Norman
-
-
