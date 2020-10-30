@@ -286,22 +286,16 @@ Designing
 AWS
 
 	Amazon Web Services For Dummies by Bernard Golden
-	Amazon Web Services For Dummies by Bernard Golden
-	Amazon Web Services in Action by Andreas Wittig Michael Wittig
 	Amazon Web Services in Action by Andreas Wittig Michael Wittig
 	Amazon Web Services Made Simple Learn how Amazon EC2 S3 SimpleDB and SQS Web Services enables you to reach business goals faster by Donald Robinson
 	AWS Automation Cookbook Continuous Integration and Continuous Deployment using AWS services by Nikit Swaraj
 	Aws Certified Advanced Networking Official Study Guide Specialty Exam by Sidhartha Chauhan
-	Aws Certified Advanced Networking Official Study Guide Specialty Exam by Sidhartha Chauhan
 	AWS Certified Solutions Architect Practice Tests Associate SAA-C01 Exam by Brett McLaughlin
 	AWS Certified Solutions Architect Study Guide 2nd Edition by Ben Piper David Clinton
-	AWS Certified Solutions Architect Study Guide 2nd Edition by Ben Piper David Clinton
-	Effective DevOps with AWS Ship faster scale better and deliver incredible productivity by Nathaniel Felsen
 	Effective DevOps with AWS Ship faster scale better and deliver incredible productivity by Nathaniel Felsen
 	Full Stack Serverless
 	Implementing Devops on Aws by Veselin Kantsev
 	Mastering AWS Security Create and maintain a secure cloud ecosystem by Albert Anthony
-	Practical Amazon EC2 SQS Kinesis and S3 A Hands-On Approach to AWS by Sunil Gulabani
 	Practical Amazon EC2 SQS Kinesis and S3 A Hands-On Approach to AWS by Sunil Gulabani
 	Serverless Architectures on AWS With examples using AWS Lambda by Peter Sbarski 1
 	Video on demand on aws
